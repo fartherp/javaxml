@@ -24,6 +24,9 @@ public class Document implements Element {
     /** XML根目录元素：mapper/configuration */
     private XmlElement rootElement;
 
+    /** 所属模块 **/
+    private String module;
+
     public Document(String name) {
         this.name = name;
     }
@@ -62,5 +65,13 @@ public class Document implements Element {
 
     public String getName() {
         return name;
+    }
+
+    public String getModule() {
+        return module;
+    }
+
+    public void setModule(String module) {
+        this.module = module;
     }
 }
