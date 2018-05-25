@@ -11,7 +11,7 @@
     <groupId>com.github.fartherp</groupId>
     <artifactId>javaxml</artifactId>
     <packaging>jar</packaging>
-    <version>2.0.1-SNAPSHOT</version>
+    <version>2.0.1</version>
 
     <name>javaxml</name>
     <url>https://github.com/fartherp/javaxml</url>
