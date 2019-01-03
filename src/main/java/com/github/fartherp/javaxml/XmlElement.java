@@ -4,7 +4,7 @@
 
 package com.github.fartherp.javaxml;
 
-import com.github.fartherp.framework.common.util.OutputUtils;
+import com.github.fartherp.framework.common.util.OutputUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,7 +49,7 @@ public class XmlElement implements Element {
         StringBuilder sb = new StringBuilder();
 
         // 生成名称对应标签
-        OutputUtils.xmlIndent(sb, indentLevel);
+        OutputUtil.xmlIndent(sb, indentLevel);
         sb.append('<');
         sb.append(this.name);
 
@@ -63,12 +63,12 @@ public class XmlElement implements Element {
         if (this.elements.size() > 0) {
             sb.append(">");
             for (Element element : this.elements) {
-                OutputUtils.newLine(sb);
+                OutputUtil.newLine(sb);
                 sb.append(element.getFormattedContent(indentLevel + 1));
             }
             // 生成名称对应的结束标签
-            OutputUtils.newLine(sb);
-            OutputUtils.xmlIndent(sb, indentLevel);
+            OutputUtil.newLine(sb);
+            OutputUtil.xmlIndent(sb, indentLevel);
             sb.append("</");
             sb.append(this.name);
             sb.append('>');
@@ -77,8 +77,8 @@ public class XmlElement implements Element {
                 sb.append(" />");
             } else {
                 sb.append('>');
-                OutputUtils.newLine(sb);
-                OutputUtils.newLine(sb);
+                OutputUtil.newLine(sb);
+                OutputUtil.newLine(sb);
                 sb.append("</");
                 sb.append(this.name);
                 sb.append('>');

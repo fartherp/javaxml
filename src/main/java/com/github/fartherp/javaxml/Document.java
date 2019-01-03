@@ -4,7 +4,7 @@
 
 package com.github.fartherp.javaxml;
 
-import com.github.fartherp.framework.common.util.OutputUtils;
+import com.github.fartherp.framework.common.util.OutputUtil;
 
 /**
  * 文档信息
@@ -44,7 +44,7 @@ public class Document implements Element {
         sb.append("<?xml version=\"1.0\" encoding=\"UTF-8\" ?>");
 
         if (publicId != null && systemId != null) {
-            OutputUtils.newLine(sb);
+            OutputUtil.newLine(sb);
             sb.append("<!DOCTYPE ");
             sb.append(rootElement.getName());
             sb.append(" PUBLIC \"");
@@ -54,7 +54,7 @@ public class Document implements Element {
             sb.append("\" >");
         }
 
-        OutputUtils.newLine(sb);
+        OutputUtil.newLine(sb);
         sb.append(rootElement.getFormattedContent(0));
         return sb.toString();
     }

@@ -4,7 +4,7 @@
 
 package com.github.fartherp.javaxml;
 
-import com.github.fartherp.framework.common.util.OutputUtils;
+import com.github.fartherp.framework.common.util.OutputUtil;
 
 /**
  * the XML of text content.
@@ -24,7 +24,7 @@ public class TextElement implements Element {
 
     public String getFormattedContent(int indentLevel) {
         StringBuilder sb = new StringBuilder();
-        OutputUtils.xmlIndent(sb, indentLevel);
+        OutputUtil.xmlIndent(sb, indentLevel);
         sb.append(content);
         return sb.toString();
     }
