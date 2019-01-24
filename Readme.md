@@ -1,4 +1,21 @@
 # 生成XML文件
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.fartherp/javaxml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.fartherp/javaxml/)
+
+## 如何使用？
+1. 在项目中加入```javaxml```依赖
+
+    ```Maven```
+    ``` xml
+    <dependency>
+        <groupId>com.github.fartherp</groupId>
+        <artifactId>javaxml</artifactId>
+        <version>2.0.2</version>
+    </dependency>
+    ```
+    ```Gradle```
+    ```
+    compile 'com.github.fartherp:javaxml:2.0.2'
+    ```
 
 ## Document
 java公用信息
