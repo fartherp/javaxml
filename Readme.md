@@ -1,5 +1,9 @@
 # 生成XML文件
+[![Build Status](https://travis-ci.org/fartherp/javaxml.svg?branch=master)](https://travis-ci.org/fartherp/javaxml)
+[![Coverage Status](https://coveralls.io/repos/github/fartherp/javaxml/badge.svg?branch=master)](https://coveralls.io/github/fartherp/javaxml?branch=master)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.fartherp/javaxml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.fartherp/javaxml/)
+[![GitHub release](https://img.shields.io/github/release/fartherp/javaxml.svg)](https://github.com/fartherp/javaxml/releases)
+[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 ## 如何使用？
 1. 在项目中加入```javaxml```依赖
