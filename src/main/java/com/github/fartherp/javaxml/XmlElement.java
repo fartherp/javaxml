@@ -4,7 +4,7 @@
 
 package com.github.fartherp.javaxml;
 
-import com.github.fartherp.framework.common.util.OutputUtil;
+import com.github.fartherp.javaxml.utils.OutputUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,18 +31,19 @@ public class XmlElement implements Element {
     }
 
     public XmlElement(String name, boolean end) {
-        attributes = new ArrayList<Attribute>();
-        elements = new ArrayList<Element>();
+        attributes = new ArrayList<>();
+        elements = new ArrayList<>();
         this.name = name;
         this.end = end;
     }
 
     public XmlElement(XmlElement original) {
-        attributes = new ArrayList<Attribute>();
+        attributes = new ArrayList<>();
         attributes.addAll(original.attributes);
-        elements = new ArrayList<Element>();
+        elements = new ArrayList<>();
         elements.addAll(original.elements);
         this.name = original.name;
+        this.end = original.end;
     }
 
     public String getFormattedContent(int indentLevel) {

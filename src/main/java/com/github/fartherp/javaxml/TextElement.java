@@ -4,7 +4,7 @@
 
 package com.github.fartherp.javaxml;
 
-import com.github.fartherp.framework.common.util.OutputUtil;
+import com.github.fartherp.javaxml.utils.OutputUtil;
 
 /**
  * the XML of text content.
