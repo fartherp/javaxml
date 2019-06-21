@@ -4,7 +4,6 @@
 
 package com.github.fartherp.javaxml.formatter;
 
-import com.github.fartherp.javaxml.Document;
 import org.testng.annotations.Test;
 
 import static com.github.fartherp.javaxml.DocumentTest.getDocument;
