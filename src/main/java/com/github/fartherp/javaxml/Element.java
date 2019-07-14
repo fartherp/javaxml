@@ -17,8 +17,8 @@ package com.github.fartherp.javaxml;
 
 /**
  * element interface
- * Author: CK.
- * Date: 2015/6/6.
+ * @author CK.
+ * @date 2015/6/6.
  */
 public interface Element {
     /**

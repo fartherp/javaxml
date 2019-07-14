@@ -22,8 +22,8 @@ import java.util.List;
 
 /**
  * the XML of XML element.
- * Author: CK.
- * Date: 2015/6/6.
+ * @author CK.
+ * @date 2015/6/6.
  */
 public class XmlElement implements Element {
 
@@ -57,7 +57,8 @@ public class XmlElement implements Element {
         this.end = original.end;
     }
 
-    public String getFormattedContent(int indentLevel) {
+    @Override
+	public String getFormattedContent(int indentLevel) {
         StringBuilder sb = new StringBuilder();
 
         // 生成名称对应标签

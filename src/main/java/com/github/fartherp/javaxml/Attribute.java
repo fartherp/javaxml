@@ -20,8 +20,8 @@ package com.github.fartherp.javaxml;
  * <p><code>Element attribute = new Attribute("id", "getList");</code></p>
  * <p><code>attribute.getFormattedContent(1);</code></p>
  * <p>the result is <b>id="getList"</b></p>
- * Author: CK.
- * Date: 2015/6/5.
+ * @author CK.
+ * @date 2015/6/5.
  */
 public class Attribute implements Element {
     private String name;
@@ -33,7 +33,8 @@ public class Attribute implements Element {
         this.value = value;
     }
 
-    public String getFormattedContent(int indentLevel) {
+    @Override
+	public String getFormattedContent(int indentLevel) {
         StringBuilder sb = new StringBuilder();
         sb.append(name);
         sb.append("=\"");

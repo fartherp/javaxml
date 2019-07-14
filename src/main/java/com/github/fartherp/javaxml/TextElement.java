@@ -22,8 +22,8 @@ import com.github.fartherp.javaxml.utils.OutputUtil;
  * <p><code>Element attribute = new TextElement("select * from table");</code></p>
  * <p><code>attribute.getFormattedContent(1);</code></p>
  * <p>the result is <b>select * from table</b></p>
- * Author: CK.
- * Date: 2015/6/6.
+ * @author CK.
+ * @date 2015/6/6.
  */
 public class TextElement implements Element {
 
@@ -33,7 +33,8 @@ public class TextElement implements Element {
         this.content = content;
     }
 
-    public String getFormattedContent(int indentLevel) {
+    @Override
+	public String getFormattedContent(int indentLevel) {
         StringBuilder sb = new StringBuilder();
         OutputUtil.xmlIndent(sb, indentLevel);
         sb.append(content);
