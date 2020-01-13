@@ -5,7 +5,8 @@
 [![Sonatype Nexus (Snapshots)](https://img.shields.io/nexus/s/https/oss.sonatype.org/com.github.fartherp/javaxml.svg)](https://oss.sonatype.org/content/repositories/snapshots/com/github/fartherp/javaxml/)
 [![GitHub release](https://img.shields.io/github/release/fartherp/javaxml.svg)](https://github.com/fartherp/javaxml/releases)
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
-[![Project Stats](https://www.openhub.net/p/javaxml/widgets/project_thin_badge.gif)](https://www.openhub.net/p/javaxml)
+[![Project Stats](https://www.openhub.net/p/javaxml/widgets/project_thin_badge.gif)](https://www.openhub.net/p/javaxml)  
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=fartherp_javaxml)](https://sonarcloud.io/dashboard?id=fartherp_javaxml)
 
 ## Document
 java公用信息
